@@ -1,0 +1,28 @@
+[user]
+  name = Bohnna Chhim
+	email = info@bohnna.com
+[github]
+  user = bunzrok
+[push]
+  default = simple
+[alias]
+  a  = add
+  aa = add --all
+  ap = add -i
+  ca = commit --amend
+  c  = commit -v
+  co = checkout
+  cb = checkout -b
+  db = branch -d
+  d  = diff
+  ds = diff --staged
+  db = !sh -c 'git push --delete origin $1 && git branch -D $1' -
+  up = !git fetch origin && git rebase -i origin/master
+  down = !git checkout master && git merge @{-1} && git push
+  fuckit = !sh -c 'git add --all && git reset --hard'
+  safe = !mkdir .git/safe
+  pr = !hub pull-request --browse
+[core]
+	excludesFile = /Users/bunz/.gitignore_global
+[commit]
+  template = ~/.gitmessage

@@ -1,0 +1,15 @@
+.DS_Store
+.rbenv-gemsets
+.bundle
+.env
+tmp/**/8
+!tmp/cache/.keep
+log/*.log
+*.swp
+*.swo
+*.~
+vim/bundle
+vim/tmp
+vim/backups
+*/.netrwhist
+.netrwhist
