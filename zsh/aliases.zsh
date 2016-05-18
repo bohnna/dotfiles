@@ -15,6 +15,7 @@ alias nodeplz="npm install & bower install"
 if is_mac; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
     alias oo='open .' # open current dir in OS X Finder
+    alias rm='trash' # Move items to the trash (Do brew install trash first)
 fi
 
 if [[ -x "`whence -p dircolors`" ]]; then

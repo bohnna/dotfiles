@@ -23,6 +23,6 @@
   safe = !mkdir .git/safe
   pr = !hub pull-request --browse
 [core]
-	excludesFile = /Users/bunz/.gitignore_global
+	excludesFile = ~/.gitignore_global
 [commit]
   template = ~/.gitmessage
