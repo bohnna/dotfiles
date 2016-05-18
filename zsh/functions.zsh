@@ -1,10 +1,15 @@
+#
+# Make and cd into a directory
+
 mcd() { 
     mkdir -p "$1" && cd "$1"; 
 }
+
 #
 # Show how much RAM application uses.
 # $ ram safari
 # # => safari uses 154.69 MBs of RAM.
+
 function ram() {
   local sum
   local items
@@ -24,8 +29,10 @@ function ram() {
     fi
   fi
 }
+
 #
 # $ size dir1 file2.js
+
 function size() {
   # du -sh "$@" 2>&1 | grep -v '^du:' | sort -nr
   du -shck "$@" | sort -rn | awk '
@@ -38,6 +45,15 @@ function size() {
       {gsub(/^[0-9]+/, human($1)); print}'
 }
 
+#
+# Monitor IO in real-time (open files etc).
+
+function openfiles() {
+  sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
+}
+
+#
+# Find a file/pattern within a specified directory
 function ff() {
     find . -iname "*${1:-}*"
 }

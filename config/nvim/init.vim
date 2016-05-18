@@ -9,8 +9,6 @@ Plug 'tpope/vim-fugitive' " Git wrapper for VIM
 Plug 'tpope/vim-eunuch' " Unix sugar for VIM
 Plug 'tpope/vim-commentary' " Easy commenting
 Plug 'tpope/vim-rails' " Rails stuffs
-Plug 'tpope/vim-liquid' " Rails stuffs
-Plug 'vim-ruby/vim-ruby' "Rubish
 Plug 'mattn/emmet-vim' " Emmet, for fast code snippets and completions
 Plug 'edkolev/tmuxline.vim' " Install Tmuxline
 
@@ -22,6 +20,8 @@ Plug 'christoomey/vim-tmux-navigator' " Because this shit gets confusing
 Plug 'tpope/vim-vinegar' " Netrw enhancements 
 
 " Markup
+Plug 'tpope/vim-liquid' " Liquid syntax coloring
+Plug 'vim-ruby/vim-ruby' "Rubish
 Plug 'othree/html5.vim' " HTML5 Omnicomplete
 Plug 'nono/vim-handlebars' " Syntax set for Handle Bars Templates
 Plug 'pangloss/vim-javascript' " JS Markup and Syntax Support for VIM
@@ -51,10 +51,6 @@ noremap Q <Nop>
 noremap K <Nop>
 
 " Key Mappings
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 let mapleader=" " " Set leader to space
 inoremap jj <ESC>
 nmap <leader>l :bnext<cr>
@@ -107,6 +103,9 @@ set wildmenu " Tab for autocompletion of commands
 
 syntax enable " Turn on syntax highlighting
 
+let g:netrw_dirhistmax = 0
+
+
 " Plugin Settings
 
 " Syntastic
@@ -132,6 +131,13 @@ let g:ctrlp_custom_ignore = {
 	\ 'dir': 	'\v[\/](\.(git|hg|svn)|\_site)$',
 	\ 'file':  '\v\.(exe|so|dll|class|dmg|png|jpg|jpeg|tar.gz|zip)$',
 	\}
+"
+"" Disable chacing
+let g:ctrlp_use_caching=0
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+endif
 
 " Indent Guides
 let g:indent_guides_guide_size = 2

@@ -1,13 +1,11 @@
-PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/Users/bunz/bin/FDK/Tools/osx:./node_modules/.bin"
-FDK_EXE="/Users/bunz/bin/FDK/Tools/osx"
+PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:~/bin/FDK/Tools/osx:./node_modules/.bin"
+FDK_EXE="~/bin/FDK/Tools/osx"
 
 export PATH
 export FDK_EXE
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export TERMINFO="$HOME/.terminfo"
-
-
 
 autoload -U colors && colors;
 
@@ -41,8 +39,8 @@ setopt hist_expire_dups_first
 setopt hist_ignore_space
 
 HISTFILE=~/.history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000
+SAVEHIST=1000
 
 # Checks
 is_mac() { [[ $OSTYPE == darwin* ]] }
@@ -52,6 +50,7 @@ has_apt() { [[ -n ${commands[apt-get]} ]] }
 has_yum() { [[ -n ${commands[yum]} ]] }
 #
 # RVM or rbenv
+#
 export RBENV_ROOT=$HOME/.rbenv
 [[ -d /usr/local/var/rbenv ]] && export RBENV_ROOT=/usr/local/var/rbenv
 if [[ -s $HOME/.rvm/scripts/rvm ]]; then
