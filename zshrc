@@ -7,6 +7,7 @@ export EDITOR=nvim
 export VISUAL=$EDITOR
 export TERMINFO="$HOME/.terminfo"
 
+source ~/.nvm/nvm.sh
 autoload -U colors && colors;
 
 setopt correct
@@ -68,7 +69,19 @@ elif [[ -d $RBENV_ROOT ]]; then
 else
     ruby_version() { echo '' }
 fi
-
+#
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 # Load all files in ~/.zsh
 for function in ~/.zsh/*; do
   source $function
@@ -76,3 +89,4 @@ done
 
 # Load local customizations
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
