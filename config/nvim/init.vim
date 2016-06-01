@@ -82,6 +82,7 @@ set ignorecase " Ignore case while searching
 set incsearch " Incremental searching
 set laststatus=2 " Always show status line
 set lazyredraw " buffer screen updates
+set matchtime=0
 set noswapfile
 set nowrap " Don't wrap lines
 set number " Show line numbers
