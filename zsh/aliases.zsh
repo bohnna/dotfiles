@@ -10,7 +10,11 @@ alias wget='wget --no-check-certificate'
 alias pinst='sudo python setup.py install && sudo rm -r build && sudo rm -r dist && sudo rm -r *egg-info' # install a Python package
 alias beep='echo -n "\a"'
 alias fucknode="rm -rf node_modules && rm -rf bower_components"
-alias nodeplz="npm install & bower install"
+alias pullstaging="wordmove pull -d -e staging && wordmove pull -u -e staging && wordmove pull -p -e staging"
+alias pullprod="wordmove pull -d -e production && wordmove pull -u -e production && wordmove pull -p -e production"
+alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging && wordmove push -p -e staging"
+alias pushprod="wordmove push -d -e production && wordmove push -u -e production && wordmove push -p -e production"
+alias nodeplz="npm install"
 
 if is_mac; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
