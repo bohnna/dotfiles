@@ -14,6 +14,7 @@ alias pullstaging="wordmove pull -d -e staging && wordmove pull -u -e staging &&
 alias pullprod="wordmove pull -d -e production && wordmove pull -u -e production && wordmove pull -p -e production && git pull"
 alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging && wordmove push -p -e staging && wordmove push -t -e staging"
 alias pushprod="wordmove push -d -e production && wordmove push -u -e production && wordmove push -p -e production && wordmove push -t -e production"
+alias listusage="du -ah . | sort -rn | head -20"
 alias nodeplz="npm install"
 
 if is_mac; then
