@@ -16,6 +16,7 @@ alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging &&
 alias pushprod="wordmove push -d -e production && wordmove push -u -e production && wordmove push -p -e production && wordmove push -t -e production"
 alias listusage="du -ah . | sort -rn | head -20"
 alias nodeplz="npm install"
+alias killcache="dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 if is_mac; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
