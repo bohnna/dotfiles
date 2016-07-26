@@ -9,19 +9,19 @@ alias s_smtp='python -m smtpd -n -c DebuggingServer localhost:1025' # SMTP test 
 alias wget='wget --no-check-certificate'
 alias pinst='sudo python setup.py install && sudo rm -r build && sudo rm -r dist && sudo rm -r *egg-info' # install a Python package
 alias beep='echo -n "\a"'
-alias fucknode="rm -rf node_modules && rm -rf bower_components"
-alias pullstaging="wordmove pull -d -e staging && wordmove pull -u -e staging && wordmove pull -p -e staging && git pull"
-alias pullprod="wordmove pull -d -e production && wordmove pull -u -e production && wordmove pull -p -e production && git pull"
-alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging && wordmove push -p -e staging && wordmove push -t -e staging"
+alias pullstaging="wordmove pull -d -e staging && wordmove pull -u -e staging && wordmove pull -p -e staging && wordmove pull -m -e staging && git pull"
+alias pullprod="wordmove pull -d -e production && wordmove pull -u -e production && wordmove pull -p -e production && wordmove pull -m -e production && git pull"
+alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging && wordmove push -p && wordmove push -m -e staging && wordmove push -t -e staging"
 alias pushprod="wordmove push -d -e production && wordmove push -u -e production && wordmove push -p -e production && wordmove push -t -e production"
 alias listusage="du -ah . | sort -rn | head -20"
 alias nodeplz="npm install"
+alias fucknode="rm -rf node_modules && rm -rf bower_components"
 alias killcache="dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 if is_mac; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
     alias oo='open .' # open current dir in OS X Finder
-    alias rm='trash' # Move items to the trash (Do brew install trash first)
+    alias rm='trash' # Move deleted items to the trash (Do brew install trash first)
 fi
 
 if [[ -x "`whence -p dircolors`" ]]; then
