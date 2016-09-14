@@ -13,6 +13,7 @@ alias pullstaging="wordmove pull -d -e staging && wordmove pull -u -e staging &&
 alias pullprod="wordmove pull -d -e production && wordmove pull -u -e production && wordmove pull -p -e production && wordmove pull -m -e production && git pull"
 alias pushstaging="wordmove push -d -e staging && wordmove push -u -e staging && wordmove push -p && wordmove push -m -e staging && wordmove push -t -e staging"
 alias pushprod="wordmove push -d -e production && wordmove push -u -e production && wordmove push -p -e production && wordmove push -t -e production"
+alias simulator="open -n /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias listusage="du -ah . | sort -rn | head -20"
 alias nodeplz="npm install"
 alias fucknode="rm -rf node_modules && rm -rf bower_components"
