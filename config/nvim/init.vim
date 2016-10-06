@@ -20,6 +20,7 @@ Plug 'christoomey/vim-tmux-navigator' " Because this shit gets confusing
 Plug 'tpope/vim-vinegar' " Netrw enhancements 
 
 " Markup
+Plug 'elixir-lang/vim-elixir' " Elixir 
 Plug 'tpope/vim-liquid' " Liquid syntax coloring
 Plug 'vim-ruby/vim-ruby' "Rubish
 Plug 'othree/html5.vim' " HTML5 Omnicomplete
