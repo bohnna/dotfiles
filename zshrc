@@ -1,4 +1,4 @@
-PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:~/bin/FDK/Tools/osx:./node_modules/.bin:/usr/local/Cellar/android-sdk/24.4"
+PATH="$HOME/.rvm/bin:/usr/local/php5/bin:/usr/local/bin:/usr/local/sbin:~/bin:~/bin/FDK/Tools/osx:./node_modules/.bin:/usr/local/Cellar/android-sdk/24.4:$PATH"
 FDK_EXE="~/bin/FDK/Tools/osx"
 
 export PATH

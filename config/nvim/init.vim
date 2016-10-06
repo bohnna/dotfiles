@@ -22,6 +22,7 @@ Plug 'tpope/vim-vinegar' " Netrw enhancements
 " Markup
 Plug 'elixir-lang/vim-elixir' " Elixir 
 Plug 'tpope/vim-liquid' " Liquid syntax coloring
+Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby' "Rubish
 Plug 'othree/html5.vim' " HTML5 Omnicomplete
 Plug 'nono/vim-handlebars' " Syntax set for Handle Bars Templates
