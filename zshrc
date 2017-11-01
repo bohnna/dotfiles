@@ -90,3 +90,4 @@ done
 # Load local customizations
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

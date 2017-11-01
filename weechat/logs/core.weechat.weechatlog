@@ -1,0 +1,179 @@
+2017-07-18 11:02:52		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2017-07-18 11:02:52		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2017-07-18 11:02:52		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2017-07-18 11:02:52		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2017-07-18 11:02:52		python: stdout/stderr: Traceback (most recent call last):
+2017-07-18 11:02:52		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-07-18 11:02:52		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-07-18 11:02:52		python: stdout/stderr: ImportError: No module named websocket
+2017-07-18 11:02:52	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-07-18 11:02:52		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-07-18 11:04:00		irc: server BNC added
+2017-07-18 11:04:26		Option changed: irc.server.BNC.ssl_verify = off  (default if null: on)
+2017-07-18 11:04:47		All servers:
+2017-07-18 11:04:47		   BNC
+2017-07-18 11:04:51	⚠	Error with command "/server change" (help on command: /help server)
+2017-07-18 11:04:53		[irc]  /server  list|listfull [<server>]
+2017-07-18 11:04:53		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2017-07-18 11:04:53		                copy|rename <server> <new_name>
+2017-07-18 11:04:53		                reorder <server> [<server>...]
+2017-07-18 11:04:53		                open <server>|-all [<server>...]
+2017-07-18 11:04:53		                del|keep <server>
+2017-07-18 11:04:53		                deloutq|jump|raw
+2017-07-18 11:04:53		list, add or remove IRC servers
+2017-07-18 11:04:53		    list: list servers (without argument, this list is displayed)
+2017-07-18 11:04:53		listfull: list servers with detailed info for each server
+2017-07-18 11:04:53		     add: add a new server
+2017-07-18 11:04:53		  server: server name, for internal and display use
+2017-07-18 11:04:53		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2017-07-18 11:04:53		   -temp: add a temporary server (not saved)
+2017-07-18 11:04:53		  option: set option for server (for boolean option, value can be omitted)
+2017-07-18 11:04:53		nooption: set boolean option to 'off' (for example: -nossl)
+2017-07-18 11:04:53		    copy: duplicate a server
+2017-07-18 11:04:53		  rename: rename a server
+2017-07-18 11:04:53		 reorder: reorder list of servers
+2017-07-18 11:04:53		    open: open the server buffer without connecting
+2017-07-18 11:04:53		    keep: keep server in config file (for temporary servers only)
+2017-07-18 11:04:53		     del: delete a server
+2017-07-18 11:04:53		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2017-07-18 11:04:53		    jump: jump to server buffer
+2017-07-18 11:04:53		     raw: open buffer with raw IRC data
+2017-07-18 11:04:53		Examples:
+2017-07-18 11:04:53		  /server listfull
+2017-07-18 11:04:53		  /server add freenode chat.freenode.net
+2017-07-18 11:04:53		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2017-07-18 11:04:53		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2017-07-18 11:04:53		  /server copy freenode freenode-test
+2017-07-18 11:04:53		  /server rename freenode-test freenode2
+2017-07-18 11:04:53		  /server reorder freenode2 freenode
+2017-07-18 11:04:53		  /server del freenode
+2017-07-18 11:04:53		  /server deloutq
+2017-07-18 11:05:10		irc: server BNC has been deleted
+2017-07-18 11:05:44		irc: server BNC added
+2017-07-18 11:06:03		Option changed: irc.server.BNC.ssl_verify = off  (default if null: on)
+2017-07-18 11:06:21		script: downloading list of scripts...
+2017-07-18 11:06:22		script: 349 scripts for WeeChat 1.9
+2017-07-18 11:06:32		python: loading script "/Users/bchhim/.dotfiles/weechat/python/urlserver.py"
+2017-07-18 11:06:32		python: registered script "urlserver", version 2.1 (Shorten URLs with own HTTP server)
+2017-07-18 11:06:32		URL server listening on ('10.8.200.139', 54076)
+2017-07-18 11:07:17		python: loading script "/Users/bchhim/.dotfiles/weechat/python/urlbuf.py"
+2017-07-18 11:07:17		python: registered script "urlbuf", version 0.2 (A common buffer for received URLs.)
+2017-07-20 11:54:36		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-07-20 11:54:36	⚠	python: error in function "urlbuf_close_cb"
+2017-07-20 11:54:36		URL server stopped
+2017-07-20 11:54:36		python: scripts unloaded
+2017-07-24 13:44:19		URL server listening on ('10.8.200.139', 64455)
+2017-07-24 13:44:19		python: stdout/stderr: Traceback (most recent call last):
+2017-07-24 13:44:19		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-07-24 13:44:19		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-07-24 13:44:19		python: stdout/stderr: ImportError: No module named websocket
+2017-07-24 13:44:19	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-07-24 13:44:19		python scripts loaded: urlbuf, urlserver
+2017-07-24 13:44:19		script: downloading list of scripts...
+2017-07-24 13:44:19		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-07-24 13:44:20		script: 349 scripts for WeeChat 1.9
+2017-07-28 10:42:02		URL server listening on ('10.8.200.139', 51811)
+2017-07-28 10:42:02		python: stdout/stderr: Traceback (most recent call last):
+2017-07-28 10:42:02		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-07-28 10:42:02		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-07-28 10:42:02		python: stdout/stderr: ImportError: No module named websocket
+2017-07-28 10:42:02	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-07-28 10:42:02		python scripts loaded: urlbuf, urlserver
+2017-07-28 10:42:02		script: downloading list of scripts...
+2017-07-28 10:42:02		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-07-28 10:42:04		script: 349 scripts for WeeChat 1.9
+2017-08-01 09:10:31		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-08-01 09:10:31	⚠	python: error in function "urlbuf_close_cb"
+2017-08-01 09:10:31		URL server stopped
+2017-08-01 09:10:31		python: scripts unloaded
+2017-08-01 15:48:38		URL server listening on ('10.8.200.139', 60698)
+2017-08-01 15:48:38		python: stdout/stderr: Traceback (most recent call last):
+2017-08-01 15:48:38		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-08-01 15:48:38		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-08-01 15:48:38		python: stdout/stderr: ImportError: No module named websocket
+2017-08-01 15:48:38	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-08-01 15:48:38		python scripts loaded: urlbuf, urlserver
+2017-08-01 15:48:38		script: downloading list of scripts...
+2017-08-01 15:48:38		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-08-01 15:48:42		script: 349 scripts for WeeChat 1.9
+2017-08-11 12:05:17		URL server listening on ('10.8.200.139', 61784)
+2017-08-11 12:05:17		python: stdout/stderr: Traceback (most recent call last):
+2017-08-11 12:05:17		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-08-11 12:05:17		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-08-11 12:05:17		python: stdout/stderr: ImportError: No module named websocket
+2017-08-11 12:05:17	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-08-11 12:05:17		python scripts loaded: urlbuf, urlserver
+2017-08-11 12:05:17		script: downloading list of scripts...
+2017-08-11 12:05:17		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-08-11 12:05:18		script: 349 scripts for WeeChat 1.9
+2017-08-14 16:32:07		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-08-14 16:32:07	⚠	python: error in function "urlbuf_close_cb"
+2017-08-14 16:32:07		URL server stopped
+2017-08-14 16:32:07		python: scripts unloaded
+2017-08-31 09:25:12	⚠	Bind error: [Errno 49] Can't assign requested address
+2017-08-31 09:25:12		URL server not running
+2017-08-31 09:25:12		python: stdout/stderr: Traceback (most recent call last):
+2017-08-31 09:25:12		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-08-31 09:25:12		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-08-31 09:25:12		python: stdout/stderr: ImportError: No module named websocket
+2017-08-31 09:25:12	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-08-31 09:25:12		python scripts loaded: urlbuf, urlserver
+2017-08-31 09:25:12		script: downloading list of scripts...
+2017-08-31 09:25:12		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-08-31 09:25:13		script: 349 scripts for WeeChat 1.9
+2017-09-12 09:18:49		URL server listening on ('10.8.146.231', 55241)
+2017-09-12 09:18:49		python: stdout/stderr: Traceback (most recent call last):
+2017-09-12 09:18:49		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-09-12 09:18:49		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-09-12 09:18:49		python: stdout/stderr: ImportError: No module named websocket
+2017-09-12 09:18:49	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-09-12 09:18:49		python scripts loaded: urlbuf, urlserver
+2017-09-12 09:18:49		script: downloading list of scripts...
+2017-09-12 09:18:49		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-09-12 09:18:50		script: 349 scripts for WeeChat 1.9
+2017-09-18 09:42:19		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-09-18 09:42:19	⚠	python: error in function "urlbuf_close_cb"
+2017-09-18 09:42:19		URL server stopped
+2017-09-18 09:42:19		python: scripts unloaded
+2017-09-25 10:47:58		URL server listening on ('10.8.200.139', 61849)
+2017-09-25 10:47:58		python: stdout/stderr: Traceback (most recent call last):
+2017-09-25 10:47:58		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-09-25 10:47:58		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-09-25 10:47:58		python: stdout/stderr: ImportError: No module named websocket
+2017-09-25 10:47:58	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-09-25 10:47:58		python scripts loaded: urlbuf, urlserver
+2017-09-25 10:47:58		script: downloading list of scripts...
+2017-09-25 10:47:58		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-09-25 10:48:01		script: 349 scripts for WeeChat 1.9
+2017-09-25 11:13:47		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-09-25 11:13:47	⚠	python: error in function "urlbuf_close_cb"
+2017-09-25 11:13:47		URL server stopped
+2017-09-25 11:13:47		python: scripts unloaded
+2017-10-17 10:27:01		URL server listening on ('10.8.200.139', 59888)
+2017-10-17 10:27:01		python: stdout/stderr: Traceback (most recent call last):
+2017-10-17 10:27:01		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-10-17 10:27:01		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-10-17 10:27:01		python: stdout/stderr: ImportError: No module named websocket
+2017-10-17 10:27:01	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-10-17 10:27:01		python scripts loaded: urlbuf, urlserver
+2017-10-17 10:27:01		script: downloading list of scripts...
+2017-10-17 10:27:01		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-10-17 10:27:02		script: 350 scripts for WeeChat 1.9
+2017-10-20 14:30:05		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-10-20 14:30:05	⚠	python: error in function "urlbuf_close_cb"
+2017-10-20 14:30:05		URL server stopped
+2017-10-20 14:30:05		python: scripts unloaded
+2017-10-25 12:53:07		URL server listening on ('10.8.200.139', 58845)
+2017-10-25 12:53:07		python: stdout/stderr: Traceback (most recent call last):
+2017-10-25 12:53:07		python: stdout/stderr:   File "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py", line 18, in <module>
+2017-10-25 12:53:07		python: stdout/stderr:     from websocket import create_connection,WebSocketConnectionClosedException
+2017-10-25 12:53:07		python: stdout/stderr: ImportError: No module named websocket
+2017-10-25 12:53:07	⚠	python: unable to parse file "/Users/bchhim/.dotfiles/weechat/python/autoload/wee_slack.py"
+2017-10-25 12:53:07		python scripts loaded: urlbuf, urlserver
+2017-10-25 12:53:07		script: downloading list of scripts...
+2017-10-25 12:53:07		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-10-25 12:53:08		script: 350 scripts for WeeChat 1.9
+2017-10-26 17:56:21		python: stdout/stderr: TypeError: urlbuf_close_cb() takes exactly 2 arguments (0 given)
+2017-10-26 17:56:21	⚠	python: error in function "urlbuf_close_cb"
+2017-10-26 17:56:21		URL server stopped
+2017-10-26 17:56:21		python: scripts unloaded
