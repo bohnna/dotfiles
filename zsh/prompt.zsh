@@ -19,4 +19,4 @@ virtualenv_info() {
     [ $VIRTUAL_ENV ] && echo ' ('`basename $VIRTUAL_ENV`')'
 }
 
-prompts '%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(virtualenv_info) %{$fg[yellow]%}$(prompt_char)%{$reset_color%} ' '%{$fg[red]%}$(rvm-prompt)%{$reset_color%}'
+prompts '%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(virtualenv_info) %{$fg[yellow]%}$(prompt_char)%{$reset_color%} ' 

@@ -1,4 +1,4 @@
-PATH="$HOME/.rvm/bin:/usr/local/php5/bin:/usr/local/bin:/usr/local/sbin:~/bin:~/bin/FDK/Tools/osx:./node_modules/.bin:/usr/local/Cellar/android-sdk/24.4:$PATH"
+PATH="$HOME/usr/local/php5/bin:/usr/local/bin:/usr/local/sbin:~/bin:~/bin/FDK/Tools/osx:./node_modules/.bin:/usr/local/Cellar/android-sdk/24.4:$PATH"
 FDK_EXE="~/bin/FDK/Tools/osx"
 
 export PATH
@@ -49,26 +49,6 @@ is_linux() { [[ $OSTYPE == linux-gnu ]] }
 has_brew() { [[ -n ${commands[brew]} ]] }
 has_apt() { [[ -n ${commands[apt-get]} ]] }
 has_yum() { [[ -n ${commands[yum]} ]] }
-#
-# RVM or rbenv
-#
-export RBENV_ROOT=$HOME/.rbenv
-[[ -d /usr/local/var/rbenv ]] && export RBENV_ROOT=/usr/local/var/rbenv
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-    source $HOME/.rvm/scripts/rvm
-    RUBY_VERSION_PREFIX='r'
-    ruby_version() {
-        if [[ $RUBY_VERSION != "" ]]; then
-            echo $RUBY_VERSION_PREFIX$RUBY_VERSION | sed s/ruby-//
-        else echo ''; fi
-    }
-elif [[ -d $RBENV_ROOT ]]; then
-    export PATH=$PATH:$RBENV_ROOT/bin
-    eval "$(rbenv init -)"
-    ruby_version() { rbenv version-name }
-else
-    ruby_version() { echo '' }
-fi
 #
 # place this after nvm initialization!
 autoload -U add-zsh-hook
